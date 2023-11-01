@@ -1,0 +1,150 @@
+object Form1: TForm1
+  Left = 985
+  Height = 470
+  Top = 125
+  Width = 320
+  Caption = 'PT Nusa Indah'
+  ClientHeight = 470
+  ClientWidth = 320
+  LCLVersion = '2.2.6.0'
+  object edtNama: TEdit
+    Left = 128
+    Height = 23
+    Top = 32
+    Width = 152
+    TabOrder = 0
+    Text = 'Nama'
+  end
+  object cbJabatan: TComboBox
+    Left = 128
+    Height = 23
+    Top = 72
+    Width = 152
+    ItemHeight = 15
+    Items.Strings = (
+      'Direktur'
+      'Manager'
+      'Operator'
+    )
+    OnChange = cbJabatanChange
+    TabOrder = 1
+    Text = 'Jabatan'
+  end
+  object edtGapok: TEdit
+    Left = 128
+    Height = 23
+    Top = 112
+    Width = 152
+    TabOrder = 2
+    Text = 'Gapok'
+  end
+  object rgstatus: TRadioGroup
+    Left = 32
+    Height = 57
+    Top = 152
+    Width = 248
+    AutoFill = True
+    Caption = 'Status'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 37
+    ClientWidth = 244
+    Items.Strings = (
+      'Tetap                            '
+      'Honorer'
+    )
+    OnClick = rgstatusClick
+    TabOrder = 3
+  end
+  object Label1: TLabel
+    Left = 32
+    Height = 15
+    Top = 43
+    Width = 79
+    Caption = 'Nama Pegawai'
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 32
+    Height = 15
+    Top = 80
+    Width = 40
+    Caption = 'Jabatan'
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object Label3: TLabel
+    Left = 32
+    Height = 15
+    Top = 120
+    Width = 56
+    Caption = 'Gaji Pokok'
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object edtTunjangan: TEdit
+    Left = 160
+    Height = 23
+    Top = 224
+    Width = 120
+    TabOrder = 4
+    Text = 'Tunjangan'
+  end
+  object Label4: TLabel
+    Left = 32
+    Height = 15
+    Top = 224
+    Width = 91
+    Caption = 'Status Tunjangan'
+    ParentColor = False
+  end
+  object btnHitungi: TButton
+    Left = 32
+    Height = 25
+    Top = 264
+    Width = 248
+    Caption = 'Total Gaji'
+    OnClick = btnHitungiClick
+    TabOrder = 5
+  end
+  object edtTotalGaji: TEdit
+    Left = 128
+    Height = 23
+    Top = 312
+    Width = 152
+    TabOrder = 6
+    Text = 'Total Gaji'
+  end
+  object Label5: TLabel
+    Left = 32
+    Height = 15
+    Top = 315
+    Width = 55
+    Caption = 'Gaji Bersih'
+    ParentColor = False
+  end
+  object btnClear: TButton
+    Left = 32
+    Height = 25
+    Top = 379
+    Width = 104
+    Caption = 'Isi Data Lagi'
+    OnClick = btnClearClick
+    TabOrder = 7
+  end
+  object btnClose: TButton
+    Left = 176
+    Height = 25
+    Top = 379
+    Width = 104
+    Caption = 'Close'
+    OnClick = btnCloseClick
+    TabOrder = 8
+  end
+end

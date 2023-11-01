@@ -1,0 +1,173 @@
+object Form1: TForm1
+  Left = 866
+  Height = 444
+  Top = 133
+  Width = 320
+  Caption = 'Form1'
+  ClientHeight = 444
+  ClientWidth = 320
+  LCLVersion = '2.2.6.0'
+  object CBKode: TComboBox
+    Left = 120
+    Height = 23
+    Top = 88
+    Width = 120
+    ItemHeight = 15
+    Items.Strings = (
+      'A1'
+      'B2'
+      'B3'
+      'A3'
+      'C1'
+    )
+    OnChange = CBKodeChange
+    TabOrder = 0
+    Text = 'Kode'
+  end
+  object EQTY: TEdit
+    Left = 120
+    Height = 23
+    Top = 120
+    Width = 120
+    TabOrder = 1
+    Text = 'QTY'
+  end
+  object ENama: TEdit
+    Left = 120
+    Height = 23
+    Top = 152
+    Width = 120
+    TabOrder = 2
+    Text = 'Nama'
+  end
+  object EHarga: TEdit
+    Left = 120
+    Height = 23
+    Top = 184
+    Width = 120
+    TabOrder = 3
+    Text = 'Harga'
+  end
+  object ESubTotal: TEdit
+    Left = 120
+    Height = 23
+    Top = 216
+    Width = 120
+    TabOrder = 4
+    Text = 'SubTotal'
+  end
+  object EDiskon: TEdit
+    Left = 120
+    Height = 23
+    Top = 248
+    Width = 120
+    TabOrder = 5
+    Text = 'Diskon'
+  end
+  object ETotal: TEdit
+    Left = 120
+    Height = 23
+    Top = 280
+    Width = 120
+    TabOrder = 6
+    Text = 'Total'
+  end
+  object BTNHitung: TButton
+    Left = 24
+    Height = 25
+    Top = 328
+    Width = 75
+    Caption = 'Hitung'
+    OnClick = BTNHitungClick
+    TabOrder = 7
+  end
+  object BTNUlang: TButton
+    Left = 120
+    Height = 25
+    Top = 328
+    Width = 75
+    Caption = 'Ulang'
+    OnClick = BTNUlangClick
+    TabOrder = 8
+  end
+  object BTNKeluar: TButton
+    Left = 216
+    Height = 25
+    Top = 328
+    Width = 75
+    Caption = 'Keluar'
+    OnClick = BTNKeluarClick
+    TabOrder = 9
+  end
+  object Label1: TLabel
+    Left = 34
+    Height = 15
+    Top = 88
+    Width = 67
+    Caption = 'Kode Barang'
+    ParentColor = False
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 34
+    Height = 15
+    Top = 120
+    Width = 46
+    Caption = 'Quantity'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 34
+    Height = 15
+    Top = 152
+    Width = 72
+    Caption = 'Nama Barang'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 34
+    Height = 15
+    Top = 184
+    Width = 71
+    Caption = 'Harga Satuan'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 34
+    Height = 15
+    Top = 216
+    Width = 48
+    Caption = 'Sub Total'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 35
+    Height = 15
+    Top = 248
+    Width = 36
+    Caption = 'Diskon'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 35
+    Height = 15
+    Top = 280
+    Width = 57
+    Caption = 'Total Bayar'
+    ParentColor = False
+  end
+  object Label8: TLabel
+    Left = 35
+    Height = 25
+    Top = 32
+    Width = 271
+    Caption = 'Perhitungan Penjualan Barang'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+end
